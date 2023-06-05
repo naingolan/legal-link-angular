@@ -1,0 +1,41 @@
+<mat-drawer-container class="container">
+    <mat-drawer mode="side" opened>
+      <mat-nav-list class="list">
+        <mat-list-item routerLink="/feed">
+          <mat-icon >home</mat-icon>
+          <span>Feed</span>
+        </mat-list-item>
+        <mat-list-item routerLink="/advocates">
+          <mat-icon>people</mat-icon>
+          <span>Advocates</span>
+        </mat-list-item>
+        <mat-list-item routerLink="/messaging">
+          <mat-icon>message</mat-icon>
+          <span>Messaging</span>
+        </mat-list-item>
+        <mat-list-item routerLink="/profile">
+          <mat-icon>person</mat-icon>
+          <span>Profile</span>
+        </mat-list-item>
+        <mat-list-item routerLink="/about">
+          <mat-icon>info</mat-icon>
+          <span>About</span>
+        </mat-list-item>
+      </mat-nav-list>
+    </mat-drawer>
+  
+    <mat-drawer-content>
+      <mat-toolbar color="primary">
+        <button mat-icon-button>
+          <mat-icon>language</mat-icon>
+        </button>
+        <span>Change Language</span>
+        <span class="spacer"></span>
+        <button mat-icon-button>
+          <mat-icon>more_vert</mat-icon>
+        </button>
+      </mat-toolbar>
+      <router-outlet></router-outlet>
+    </mat-drawer-content>
+  </mat-drawer-container>
+  

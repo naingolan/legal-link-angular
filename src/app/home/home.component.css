@@ -1,0 +1,55 @@
+.container {
+    height: 100%;
+    display:flex;
+    flex-direction: row;
+    margin:0;
+    padding:0;
+  }
+  
+  .mat-drawer-container, .mat-drawer-content {
+    height: 100%;
+    width: 100%;
+    padding:0;
+    margin:0;
+
+  }
+  
+  .mat-drawer, .mat-drawer>* {
+    width: 300px;
+    background-color: red;
+    padding:0;
+    margin:0;
+  }
+  
+  .mat-toolbar {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: yellow;
+  }
+  
+  .spacer {
+    flex: 1 1 auto;
+  }
+  router-outlet{
+    margin:3%;
+    background-color: white;
+    width: 500px;
+    height: 500px;
+  }
+  .list{
+    background-color:white;
+    width:300px;
+    height: 97.5%;
+  }
+  .list>*{
+    margin:10px 30px;
+    height: 10%;
+    color:white;
+  }
+  .list>*>*{
+    background-color:red;
+  }
+  span{
+    background-color:red;
+  }
